@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Recommendation System</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Course Recommendation System</h1>
+    <form action="/recommend" method="post">
+        <label for="student_name">Enter your name:</label>
+        <input type="text" id="student_name" name="student_name">
+        <input type="submit" value="Get Recommendations">
+    </form>
+</body>
+</html>
